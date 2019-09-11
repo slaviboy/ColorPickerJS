@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../../fonts/TrajanPro-Regular.ttf');
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 4%);
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    width: 296px;
+    height: 296px;
+}
+
+#canvas-section {
+    width: 100%;
+    height: 100%;
+}
+
+#main-text-box {
+    white-space: nowrap;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#main-text-box #name {
+    font-family: TrajanPro;
+    font-size: 32px
+}
+
+#main-text-box #author {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    font-size: 12px
+}
+
+div {
+    font-family: TrajanPro;
+}

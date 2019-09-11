@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Color Window</title>
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+</head>
+
+<body>
+
+    <div id="container" class="middle">
+
+        <div id="main-text-box" class="no-selection">
+            <div id="name">Custom Color Window</div>
+            <div id="author">(by slaviboy)</div>
+        </div>
+
+        <div id="canvas-section" class="middle">
+
+            <!-- alpha horizontal window -->
+            <canvas id="alpha-horizontal-window" width="296" height="40"></canvas>
+            <canvas id="alpha-horizontal-window-selector" width="296" height="40"></canvas>
+
+            <!-- alpha vertical window -->
+            <canvas id="alpha-vertical-window" width="40" height="296" style="position:absolute; left:-40px;"></canvas>
+            <canvas id="alpha-vertical-window-selector" width="40" height="296"
+                style="position:absolute; left:-40px;"></canvas>
+
+
+            <!-- dimming horizontal window -->
+            <canvas id="dimming-horizontal-window" width="296" height="40"
+                style="position:absolute; top:50px;"></canvas>
+            <canvas id="dimming-horizontal-window-selector" width="296" height="40"
+                style="position:absolute; top:50px;"></canvas>
+
+            <!-- dimming vertical window -->
+            <canvas id="dimming-vertical-window" width="40" height="296"
+                style="position:absolute; left:-90px;"></canvas>
+            <canvas id="dimming-vertical-window-selector" width="40" height="296"
+                style="position:absolute; left:-90px;"></canvas>
+
+
+            <!-- rainbow horizontal window -->
+            <canvas id="rainbow-horizontal-window" width="296" height="40"
+                style="position:absolute; top:100px;"></canvas>
+            <canvas id="rainbow-horizontal-window-selector" width="296" height="40"
+                style="position:absolute; top:100px;"></canvas>
+
+            <!-- rainbow vertical window -->
+            <canvas id="rainbow-vertical-window" width="40" height="296"
+                style="position:absolute; left:-140px;"></canvas>
+            <canvas id="rainbow-vertical-window-selector" width="40" height="296"
+                style="position:absolute; left:-140px;"></canvas>
+
+        </div>
+    </div>
+
+    <script src="../js/global-prototypes.js"></script>
+    <script src="../js/color-window.js"></script>
+    <script src="../js/rgba-converter.js"></script>
+    <script src="../js/windows/alpha.js"></script>
+    <script src="../js/windows/dimming.js"></script>
+    <script src="../js/windows/rainbow.js"></script>
+    <script src="./js/custom-color-window-slider.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+
+    <div id="container" class="middle">
+
+        <div id="main-text-box" class="no-selection">
+            <div id="name">Color Picker</div>
+            <div id="author">(by slaviboy)</div>
+        </div>
+
+        <div id="canvas-section">
+            <!-- corner window -->
+            <canvas class="window" id="corner-window" width="296" height="296" style="left:10px;"></canvas>
+            <canvas class="window" id="corner-window-selector" width="296" height="296" style="left:10px;"></canvas>
+
+            <!-- rainbow window -->
+            <canvas class="window" id="rainbow-window" width="28" height="296" style="left:320px;"></canvas>
+            <canvas class="window" id="rainbow-window-selector" width="28" height="296" style="left:320px;"></canvas>
+
+            <!-- alpha window -->
+            <canvas class="window" id="alpha-window" width="28" height="296" style="left:360px;"></canvas>
+            <canvas class="window" id="alpha-window-selector" width="28" height="296" style="left:360px;"></canvas>
+        </div>
+
+        <!-- text section -->
+        <div id="text-section" class="tool-tip">
+
+            <div>
+                <div class="container big-container">
+                    <div class="container-text big-container-text">HEX</div>
+                    <input id="hex" class="container-input big-container-input" value="">
+                    <div class="container-frame big-container-frame"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="container small-container">
+                    <div class="container-text small-container-text">CMYK</div>
+                    <input id="cmyk" class="container-input small-container-input" value="">
+                    <div class="container-frame small-container-frame"></div>
+                </div>
+                <div class="container small-container">
+                    <div class="container-text small-container-text">RGBA</div>
+                    <input id="rgba" class="container-input small-container-input" value="">
+                    <div class="container-frame small-container-frame"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="container small-container">
+                    <div class="container-text small-container-text">HSV</div>
+                    <input id="hsv" class="container-input small-container-input" value="">
+                    <div class="container-frame small-container-frame"></div>
+                </div>
+                <div class="container small-container">
+                    <div class="container-text small-container-text">HSL</div>
+                    <input id="hsl" class="container-input small-container-input" value="">
+                    <div class="container-frame small-container-frame"></div>
+                </div>
+            </div>
+
+            <div id="tool-tip-box">
+                <div id="tool-tip-text"> Use long press to copy value</div>
+                <div id="tool-tip-arrow" class="arrow-left"></div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="./js/global-prototypes.js"></script>
+    <script src="./js/long-press.js"></script>
+    <script src="./js/color-window.js"></script>
+    <script src="./js/rgba-converter.js"></script>
+
+    <script src="./js/windows/corner.js"></script>
+    <script src="./js/windows/alpha.js"></script>
+    <script src="./js/windows/rainbow.js"></script>
+    
+    <script src="./js/pickers/corner.js"></script>
+</body>
+
+</html>

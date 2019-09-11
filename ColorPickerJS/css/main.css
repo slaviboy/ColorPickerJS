@@ -1,0 +1,227 @@
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/TrajanPro-Regular.ttf');
+}
+
+/*For all inputes with type: text*/
+
+input[type=text], select {
+    display: inline-block;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 15.0pt;
+    font-family: "Segoe UI", Arial, sans-serif;
+    /*'Eras';*/
+    text-align: center;
+    color: #262626;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    float: bottom;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.window {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* For text section */
+
+.small-container {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+div {
+    display: block;
+    font-family: TrajanPro;
+}
+
+.g {
+    line-height: 1.2;
+    text-align: left;
+}
+
+.small-container-text {
+    left: 20%;
+    transform: translate(-50%, -5%);
+}
+
+.container-text {
+    position: absolute;
+    width: 35px;
+    background: #fff;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #3c4043;
+    -webkit-user-select: none;
+}
+
+.small-container-input {
+    text-align: left;
+}
+
+.container-input {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 78%;
+    border: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    color: #3c4043;
+    outline: none;
+}
+
+/*.container-input:focus+.container-frame {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+ .container:hover .container-frame {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+} */
+
+.small-container-frame {
+    width: 93%;
+}
+
+.big-container-frame {
+    width: 96%;
+}
+
+.container-frame {
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    height: 36px;
+    margin: 5px auto 5px auto;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+div {
+    display: block;
+}
+
+.big-container {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.big-container-text {
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.big-container-input {
+    text-align: center;
+}
+
+/* Tooltip */
+
+.tool-tip {
+    position: relative;
+    display: inline-block;
+}
+
+.tool-tip #tool-tip-box {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tool-tip #tool-tip-box #tool-tip-text {
+    width: 140px;
+    background-color: rgba(0, 127, 255);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 100%;
+    margin-left: 10px;
+    transform: translate(0%, -50%);
+    transition: opacity 0.3s;
+}
+
+.tool-tip:hover #tool-tip-box {
+    visibility: visible;
+    opacity: 0.6;
+    transition: opacity .4s ease-in-out;
+}
+
+.arrow-left {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translate(0%, -50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid rgba(0, 127, 255);
+}
+
+/* No selection */
+
+.no-selection {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#text-section {
+    width: 100%;
+}
+
+#canvas-section {
+    width: 100%;
+    height: 80%;
+}
+
+#main-text-box {
+    white-space: nowrap;
+    position: absolute;
+    top: -83px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#main-text-box #name {
+    font-size: 32px
+}
+
+#main-text-box #author {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    font-size: 12px
+}
