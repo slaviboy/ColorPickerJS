@@ -50,7 +50,7 @@ class CenteredWindow extends ColorWindow {
 
         // draw gradient on temp canvas baseColor->baseColor(transparent)| (horizontally)
         this.tempContext.globalCompositeOperation = 'destination-in';
-        gradient = this.tempContext.createLinearGradient(0, halfHeight, width, height);
+        gradient = this.tempContext.createLinearGradient(0, halfHeight, width, halfHeight);
         gradient.addColorStop(0, baseColorHalfString + "1)");
         gradient.addColorStop(1, baseColorHalfString + "0)");
         this.tempContext.fillStyle = gradient;
